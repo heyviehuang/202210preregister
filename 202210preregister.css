@@ -1,0 +1,603 @@
+#wpfront-notification-bar,
+#wpfront-notification-bar-spacer {
+    display: none !important;
+    position: absolute !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(270deg, #873cc0, #1f012b);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    -o-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.preregister-fg {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -10;
+    width: 100%;
+}
+
+.navArea {
+    position: fixed;
+    background-color: #27023a;
+    top: 0px;
+    z-index: 300;
+}
+
+.endingArea {
+    padding: 100px 0px;
+}
+
+.eventMv {
+    animation-name: eventMv;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes eventMv {
+    0% {
+        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv01.png');
+    }
+    92% {
+        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv01.png');
+    }
+    94% {
+        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv.png');
+    }
+    96% {
+        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv01.png');
+    }
+    98% {
+        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv.png');
+    }
+    100% {
+        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv01.png');
+    }
+}
+
+.b1,
+.b2 {
+    position: absolute;
+    z-index: -1;
+    animation-name: b;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-bottom: 80px;
+    animation-timing-function: linear;
+}
+
+.b1 {
+    top: 0;
+    left: 0;
+}
+
+.b2 {
+    top: 3%;
+    right: 2%;
+    animation-delay: 2s;
+}
+
+@keyframes b {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.mainGpr {
+    background-color: #41088d;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 1.5s;
+}
+
+.gprTag {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    opacity: 70%;
+}
+
+.gprSelect {
+    font-size: 14px;
+    border-radius: 10px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.gprPhone {
+    border-radius: 10px;
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 0 !important;
+    padding-left: 8px !important;
+}
+
+.gprFormArea h5 {
+    color: white;
+}
+
+.gprContract {
+    font-size: 14px;
+    color: white;
+}
+
+.gprSubmitImg {
+    width: 40%;
+    cursor: pointer;
+    transition: .1s;
+    animation-name: btnAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btnAnim {
+    0% {
+        opacity: .4;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .4;
+    }
+}
+
+.gprSubmitImg:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .gprSubmitImg {
+        width: 60%;
+    }
+    .gprContract {
+        font-size: 12px;
+        color: white;
+    }
+    .gprSelect {
+        font-size: 12px;
+        border-radius: 5px;
+        height: 25px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .gprPhone {
+        border-radius: 5px;
+        height: 25px;
+        font-size: 12px;
+        border: 1px solid black;
+    }
+}
+
+.gprOptionsOff {
+    filter: grayscale(1);
+    transform: scale(0.9);
+}
+
+.gprOptionFormOff {
+    display: none !important;
+}
+
+.mainGpr:hover.mainGpr,
+.normalGpr:hover.normalGpr {
+    background-color: #19002e;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.gprContracthref {
+    color: white;
+}
+
+.bottomNavImg {
+    transform: scale(1.6);
+    transform-origin: bottom;
+}
+
+.bottomNavImg:hover {
+    transform: scale(2);
+    transform-origin: bottom;
+}
+
+.navBtn {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.navBtn:hover {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+.bottomNavArea {
+    position: fixed;
+    background-color: #330f4a;
+    bottom: 0px;
+    z-index: 298;
+    padding-bottom: 5px;
+}
+
+@media (max-width:768px) {
+    .bottomNavArea {
+        padding-bottom: 15px;
+    }
+}
+
+.eventBtn01,
+.eventBtn02,
+.eventBtn03 {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.eventBtn01:hover {
+    transform: scale(.9);
+    filter: drop-shadow(0 0 10px #340d3b);
+}
+
+.eventBtn02:hover,
+.eventBtn03:hover {
+    filter: sepia(0.4);
+}
+
+.eventDetailsArea01,
+.eventDetailsArea02 {
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow-y: scroll !important;
+}
+
+.eventDetailsContent01,
+.eventDetailsContent02 {
+    border-radius: 10px;
+    background-color: #330f4a;
+    outline: 3px solid #5bd3ff;
+    outline-offset: -2px;
+    position: relative;
+    margin-top: 60px !important;
+    color: #ffffff;
+}
+
+.eventOff {
+    display: none !important;
+}
+
+.navLeftArea {
+    position: fixed;
+    display: none !important;
+    top: 0px;
+    height: 100%;
+    z-index: 299;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.navLeftAreaContent {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    padding-top: 100px
+}
+
+@media(max-width:768px) {
+    .navLeftAreaContent {
+        width: 50%;
+        padding-top: 75px
+    }
+    .eventDetailsContent01,
+    .eventDetailsContent02,
+    .eventDetailsContent03 {
+        margin-top: 24px !important;
+    }
+}
+
+.navChoice {
+    padding: 10px 0px;
+    margin: 0px 0px;
+}
+
+.navChoice a {
+    color: black;
+    text-decoration: none !important;
+}
+
+.navChoice a:hover {
+    color: black;
+    text-decoration: none !important;
+}
+
+.navChoice:hover {
+    background-color: #9bf8ff;
+}
+
+.navMoreIconClose,
+.navMoreIcon {
+    display: none !important;
+    cursor: pointer;
+}
+
+.navMoreDisplay {
+    display: block !important;
+}
+
+.mainBody {
+    margin-top: 80px;
+}
+
+@media (max-width:1000px) {
+    .mainBody {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:768px) {
+    .mainBody {
+        margin-top: 50px;
+    }
+}
+
+.normalGpr {
+    border-radius: 10px;
+    background-color: #41088d;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    transition: 1.5s;
+}
+
+.normalGpr p {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 14px;
+    color: white
+}
+
+@media (max-width:768px) {
+    .normalGpr p {
+        font-size: 12px;
+        font-weight: 500;
+        padding-top: 14px;
+    }
+}
+
+.normalGpr a {
+    text-decoration: none !important;
+}
+
+th,
+td {
+    font-size: 12px;
+}
+
+.listTitle {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+.bodyScrollOff {
+    overflow-y: hidden !important;
+}
+
+.contentClose {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.mainGprBounder a {
+    text-decoration: none !important;
+}
+
+.bottomNavRow {
+    padding: 0px 15%;
+}
+
+@media (max-width:1000px) {
+    .bottomNavRow {
+        padding: 0px 8%;
+    }
+}
+
+@media (max-width:768px) {
+    .bottomNavRow {
+        padding: 0px 0%;
+    }
+}
+
+.bottomNavRow a {
+    text-decoration: none !important;
+}
+
+.freeKey {
+    border-radius: 10px;
+}
+
+.hitWord {
+    color: #fdff7a;
+    font-weight: 700;
+}
+
+.hitWordW {
+    color: #ff0000;
+    font-weight: 700;
+}
+
+select {
+    background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+    padding-right: 14px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*兼容蘋果手機*/
+    border: 1px solid #EBEBEB;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    /*防止緊緊靠在邊上*/
+    text-indent: 2px;
+    background-color: transparent;
+}
+
+.gfield_select {
+    width: 98%;
+    height: 25px !important;
+    border-radius: 10px;
+    border: 0px solid black;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+}
+
+.ginput_container_phone .gprPhone {
+    width: 98%;
+    height: 25px !important;
+    border-radius: 10px;
+    border: 0px solid black;
+}
+
+.gfield_checkbox {
+    margin: 0px 0px;
+    padding: 5px 0px;
+    color: white;
+}
+
+.gfield_checkbox a {
+    text-decoration: underline;
+    color: white;
+}
+
+.gfield_checkbox a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+h6 {
+    font-size: 16px!important;
+}
+
+@media (max-width:768px) {
+    h6 {
+        font-size: 12px!important;
+    }
+}
+
+.formDisplayOff {
+    display: none!important;
+}
+
+.formAnimation {
+    animation-name: formAni;
+    animation-duration: 1s;
+}
+
+@keyframes formAni {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%
+    }
+}
+
+.navCloseIcon {
+    cursor: pointer;
+}
+
+.gfield_select:focus,
+.medium:focus,
+.gfield_select:active,
+.medium:active {
+    outline: 1px solid #ff7a00;
+}
+
+.phone {
+    padding: 0 !important;
+    padding-left: 8px !important;
+}
+
+.formAnimation2 {
+    animation-name: formAni;
+    animation-duration: 0.5s;
+}
+
+.lineOff {
+    display: none !important;
+}
