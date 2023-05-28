@@ -94,22 +94,22 @@ body {
 
 @keyframes eventMv {
     0% {
-        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv01.png');
+        content: url('./preregister/eventMv01.png?v=20230528');
     }
     92% {
-        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv01.png');
+        content: url('./preregister/eventMv01.png?v=20230528');
     }
     94% {
-        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv.png');
+        content: url('./preregister/eventMv.png?v=20230528');
     }
     96% {
-        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv01.png');
+        content: url('./preregister/eventMv01.png?v=20230528');
     }
     98% {
-        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv.png');
+        content: url('./preregister/eventMv.png?v=20230528');
     }
     100% {
-        content: url('https://image.mycard520.com/globalmycard/member/preregister/main/202210/webImg/eventMv01.png');
+        content: url('./preregister/eventMv01.png?v=20230528');
     }
 }
 
